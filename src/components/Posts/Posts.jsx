@@ -1,5 +1,6 @@
-import Post from "../Post/Post";
 import styles from "./Posts.module.scss";
+
+import Post from "../Post/Post";
 
 export default function Posts() {
     return (

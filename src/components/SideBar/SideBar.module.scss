@@ -61,6 +61,38 @@
                 font-size: 16px;
                 margin-left: 10px;
             }
+
+            .topIconFace {
+                color: #1278f3;
+            }
+
+            .topIconInsta {
+                $blue: #3051f1;
+                $purple: #c92bb7;
+                $red: #f73344;
+                $orange: #fa8e37;
+                $yellow: #fcdf8f;
+                $yellow_to: #fbd377;
+                color: transparent;
+                background-clip: text !important;
+                background: radial-gradient(
+                        circle farthest-corner at 28% 100%,
+                        $yellow 0%,
+                        $yellow_to 10%,
+                        $orange 22%,
+                        $red 35%,
+                        transparent 65%
+                    ),
+                    linear-gradient(145deg, $blue 10%, $purple 70%);
+            }
+
+            .topIconPin {
+                color: #e60023;
+            }
+
+            .topIconTwit {
+                color: #179cf0;
+            }
         }
     }
 }

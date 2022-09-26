@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import styles from "SideBar.module.scss";
+import styles from "./SideBar.module.scss";
 
 export default function Sidebar() {
     return (
@@ -55,16 +55,16 @@ export default function Sidebar() {
                 <span className={styles.sidebarTitle}>FOLLOW US</span>
                 <div className={styles.sidebarSocial}>
                     <i
-                        className={` ${styles.sidebarIcon} fab fa-facebook-square`}
+                        className={` ${styles.sidebarIcon} + ${styles.topIconFace} fab fa-facebook-square`}
                     ></i>
                     <i
-                        className={` ${styles.sidebarIcon} fab fa-instagram-square`}
+                        className={` ${styles.sidebarIcon} + ${styles.topIconInsta} fab fa-instagram-square`}
                     ></i>
                     <i
-                        className={` ${styles.sidebarIcon} fab fa-pinterest-square`}
+                        className={` ${styles.sidebarIcon} + ${styles.topIconPin} fab fa-pinterest-square`}
                     ></i>
                     <i
-                        className={` ${styles.sidebarIcon} fab fa-twitter-square`}
+                        className={` ${styles.sidebarIcon} + ${styles.topIconTwit} fab fa-twitter-square`}
                     ></i>
                 </div>
             </div>

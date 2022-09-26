@@ -3,22 +3,22 @@ import { Link } from "react-router-dom";
 import styles from "./TopBar.module.scss";
 
 export default function TopBar() {
-    const user = true;
+    const user = false;
 
     return (
         <div className={styles.top}>
             <div className={styles.topLeft}>
                 <i
-                    className={`${styles.topIcon} sytles fab fa-facebook-square`}
+                    className={`${styles.topIcon} + ${styles.topIconFace} sytles fab fa-facebook-square`}
                 ></i>
                 <i
-                    className={`${styles.topIcon} sytles fab fa-instagram-square`}
+                    className={`${styles.topIcon} + ${styles.topIconInsta} sytles fab fa-instagram-square`}
                 ></i>
                 <i
-                    className={`${styles.topIcon} sytles fab fa-pinterest-square`}
+                    className={`${styles.topIcon} + ${styles.topIconPin} sytles fab fa-pinterest-square`}
                 ></i>
                 <i
-                    className={`${styles.topIcon} sytles fab fa-twitter-square`}
+                    className={`${styles.topIcon} + ${styles.topIconTwit} sytles fab fa-twitter-square`}
                 ></i>
             </div>
             <div className={styles.topCenter}>
@@ -28,14 +28,28 @@ export default function TopBar() {
                             HOME
                         </Link>
                     </li>
-                    <li className={styles.topListItem}>ABOUT</li>
-                    <li className={styles.topListItem}>CONTACT</li>
+                    <li className={styles.topListItem}>
+                        <Link className="link" to="/">
+                            ABOUT
+                        </Link>
+                    </li>
+                    <li className={styles.topListItem}>
+                        <Link className="link" to="/">
+                            CONTACT
+                        </Link>
+                    </li>
                     <li className={styles.topListItem}>
                         <Link className="link" to="/write">
                             WRITE
                         </Link>
                     </li>
-                    {user && <li className={styles.topListItem}>LOGOUT</li>}
+                    {user && (
+                        <li className={styles.topListItem}>
+                            <Link className="link" to="/">
+                                LOGOUT
+                            </Link>
+                        </li>
+                    )}
                 </ul>
             </div>
             <div className={styles.topRight}>

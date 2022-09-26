@@ -14,7 +14,7 @@ export default function Post({ img }) {
                         </Link>
                     </span>
                     <span className={styles.postCat}>
-                        <Link className="link" to="/posts?cat=Music">
+                        <Link className="link" to="/posts?cat=Life">
                             Life
                         </Link>
                     </span>
